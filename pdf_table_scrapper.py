@@ -34,8 +34,10 @@ class PDFTableScrapper:
                     pandas_options={
                         'header': 0,
                         'keep_default_na': False,
-                        'skiprows': [0, 1, 2, 3, 4],
-                        'usecols': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12]
+                        'skiprows': [0],
+                        # 'usecols': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12]
+                        'usecols': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
                     }
                 )
                 csv_file = open(output_file, 'a')
